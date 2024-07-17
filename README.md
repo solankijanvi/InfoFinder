@@ -1,4 +1,4 @@
-# Wikipedia Search App
+# InfoFinder - (Wikipedia Search App)
 
 ## Overview
 
