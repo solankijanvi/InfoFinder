@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 1.5em;
+    background-color: #4896e4;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header:before,
+footer:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 80%;
+    height: 2px;
+    background-color: #fff;
+    top: 0;
+    transform: translateX(-50%);
+    opacity: 0.2;
+}
+
+#search {
+    margin: 2em auto;
+    text-align: center;
+    max-width: 600px;
+}
+
+#search input[type="text"] {
+    width: 70%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+#search input[type="text"]:focus {
+    border-color: #4896e4;
+    outline: none;
+}
+
+#search button {
+    padding: 0.5em 1em;
+    border: none;
+    background-color: #4896e4;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 0.5em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#search button:hover {
+    background-color: #3a78b8;
+    transform: scale(1.05);
+}
+
+#results {
+    margin: 2em auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5em;
+    transition: box-shadow 0.3s;
+}
+
+#results:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#results ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#results li {
+    margin: 1em 0;
+    padding: 1em;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+#results li:hover {
+    background-color: #f9f9f9;
+}
+
+#results li:last-child {
+    border-bottom: none;
+}
+
+#results h3 {
+    margin: 0;
+    color: #4896e4;
+    transition: color 0.3s;
+}
+
+#results h3:hover {
+    color: #3a78b8;
+}
+
+#results p {
+    margin: 0.5em 0 0;
+    color: #666;
+}
